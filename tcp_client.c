@@ -61,7 +61,7 @@ int main(int argc, char *argv[]){
     if (select(socket_peer+1, &reads, 0, 0, &timeout)<0){
         fprintf(stderr, "select() failed. (%d)\n", GETSOCKETERRNO());
         return 1;
-    }x
+    }
     
    
    if (FD_ISSET(socket_peer, &reads)){
